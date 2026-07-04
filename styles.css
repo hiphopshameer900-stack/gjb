@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #020617;
+    transition: background 1.5s ease-in-out, color 1s ease-in-out;
+}
+
+.font-cursive {
+    font-family: 'Great Vibes', cursive;
+}
+
+/* Base State (Dark/Rain) */
+.dynamic-bg {
+    background: #020617;
+}
+
+/* Phase Transitions driven by Javascript Viewport Engine */
+.bg-phase-sunrise {
+    background: linear-gradient(to bottom, #020617, #1e1b4b, #581c87, #fef08a) !important;
+}
+
+.bg-phase-blossom {
+    background: linear-gradient(to bottom, #fef08a, #fce7f3, #fae8ff) !important;
+}
+
+.bg-phase-final {
+    background: #ffffff !important;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+}
